@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace EJ2
 {
-    class DivisionPorCeroException : ApplicationException
+    public class DivisionPorCeroException : ApplicationException
     {
-        public DivisionPorCeroException(string pMensaje)
-        {      
+        public DivisionPorCeroException(string pMensaje) : base(pMensaje)
+        {
             
         }
     }

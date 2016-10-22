@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EJ2
 {
-    class Matematica
+   public class Matematica
     {
        
 
