@@ -36,7 +36,7 @@ namespace EJ2
         {
             this.iCajaAhorro =new Cuenta(1000,200);
             this.iCuentaCorriente = new Cuenta(300,200);
-            this.iCliente= new Cliente(0,"38171725", "Stuart Dolittle");
+            this.iCliente= new Cliente(0,"38171725", "Juan Perez");
         }
         
     }

@@ -50,6 +50,7 @@
     <Compile Include="Fachada.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaldoInsuficienteException.cs" />
     <Compile Include="TipoDocumento.cs" />
   </ItemGroup>
   <ItemGroup>

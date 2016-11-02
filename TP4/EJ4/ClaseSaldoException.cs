@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace EJ2
 {
-    class ClaseSaldoException : ApplicationException
+    /// <summary>
+    /// Clase de excepcion producida cuando ingresa un saldo menor o igual a 0
+    /// </summary>
+    class SaldoInvalidoException : ApplicationException
     {
-        public ClaseSaldoException(string pMensaje) : base(pMensaje)
+        public SaldoInvalidoException(string pMensaje) : base(pMensaje)
         {  }
     }
 }
