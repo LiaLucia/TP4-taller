@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ2", "EJ2\EJ2.csproj", "{6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingUnitario", "TestingUnitario\TestingUnitario.csproj", "{22771B55-04DE-4438-B052-6EA8299B899F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingEJ5", "TestingEJ5\TestingEJ5.csproj", "{BC725783-70AB-47EE-B9A6-DCCF1DDA6722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ5", "EJ5\EJ5.csproj", "{1023CB84-B189-454B-95EE-B9743B3FE9A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{22771B55-04DE-4438-B052-6EA8299B899F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22771B55-04DE-4438-B052-6EA8299B899F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22771B55-04DE-4438-B052-6EA8299B899F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC725783-70AB-47EE-B9A6-DCCF1DDA6722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC725783-70AB-47EE-B9A6-DCCF1DDA6722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC725783-70AB-47EE-B9A6-DCCF1DDA6722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC725783-70AB-47EE-B9A6-DCCF1DDA6722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1023CB84-B189-454B-95EE-B9743B3FE9A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1023CB84-B189-454B-95EE-B9743B3FE9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1023CB84-B189-454B-95EE-B9743B3FE9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1023CB84-B189-454B-95EE-B9743B3FE9A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
