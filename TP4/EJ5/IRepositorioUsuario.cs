@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace EJ5
 {
+    /// <summary>
+    /// Interfaz del Repositorio que define los metodos abstractos
+    /// </summary>
     interface IRepositorioUsuario
     {
         void Eliminar(Usuario pUsuario);

@@ -4,8 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EJ5
+namespace EJ6
 {
+    /// <summary>
+    /// Interfaz del Repositorio que define los metodos abstractos
+    /// </summary>
     interface IRepositorioUsuario
     {
         void Eliminar(Usuario pUsuario);
