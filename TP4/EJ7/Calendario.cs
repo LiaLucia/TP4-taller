@@ -36,9 +36,24 @@ namespace EJ7
         }
 
 
-        public void AgregarEvento(Evento pEvento)
+        public void AgregarEvento(string pTitulo, DateTime pFechaInicio, DateTime pFechaFin, TipoFrecuencia pFrecuencia)
         {
-                this.Evento.Add(pEvento);
+            if (pFechaFin < pFechaInicio)
+            {
+                FechaFinInvalidaException Exception = new FechaFinInvalidaException("La Fecha de Fin de evento ingresada es inválida");
+                throw Exception;
+            }
+            else if(pFechaInicio < DateTime.Today) 
+            {
+                FechaInicioInvalidaException Excepcion = new FechaInicioInvalidaException("La Fecha de Inicio de evento ingresada es inválida");
+                throw Excepcion;
+            }
+        
+            else
+            {
+                Evento evento = new Evento(pTitulo, pFechaInicio, pFechaFin, pFrecuencia);
+                this.Evento.Add(evento);
+            }
         
         }
             
@@ -75,7 +90,7 @@ namespace EJ7
             {
                 if (elemento.Titulo == pTituloEvento)
                 {
-                    eventos.AgregarEvento(elemento);
+                    eventos.AgregarEvento(elemento.Titulo, elemento.FechaInicio, elemento.FechaFin, elemento.Frecuencia);
                 }
             }
             return eventos;
@@ -91,7 +106,7 @@ namespace EJ7
                 if (elemento.FechaInicio>= pFecha1 && elemento.FechaFin<=pFecha2
                     && elemento.FechaFin<=pFecha2 && elemento.FechaInicio>=pFecha1)
                 {
-                    eventos.AgregarEvento(elemento);
+                    eventos.AgregarEvento(elemento.Titulo, elemento.FechaInicio, elemento.FechaFin, elemento.Frecuencia);
                 }
             }
             return eventos;

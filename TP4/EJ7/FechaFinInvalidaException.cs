@@ -8,7 +8,7 @@ namespace EJ7
 {
     class FechaFinInvalidaException : ApplicationException
     {
-        public FechaFinInvalidaException(string pMensaje) : base(pMensaje)
+        public FechaFinInvalidaException(string eMensaje) : base(eMensaje)
         {
 
         }

@@ -16,28 +16,8 @@ namespace EJ7
         public Evento(string pTitulo, DateTime pFechaInicio, DateTime pFechaFin, TipoFrecuencia pFrecuencia)
         {
             iTitulo = pTitulo;
-            if (pFechaFin < pFechaInicio)
-            {
-                FechaFinInvalidaException Exception = new FechaFinInvalidaException("La Fecha de Fin de evento ingresada es inválida");
-                throw Exception;
-
-            }
-            else
-            {
-                iFechaFin = pFechaFin;
-            }
-            
-            if (pFechaInicio < DateTime.Today)
-            {
-                FechaInicioInvalidaException Excepcion = new FechaInicioInvalidaException("La Fecha de Inicio de evento ingresada es inválida");
-                throw Excepcion;
-            }
-           
-            else
-            {
-                iFechaInicio = pFechaInicio;
-            }
-
+            iFechaFin = pFechaFin;
+            iFechaInicio = pFechaInicio;
             iFrecuencia = pFrecuencia;
         }
 
