@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 namespace EJ2
 {
     class Program
-    {
+    {/// <summary>
+    /// Metodo que divide dos elementos y que trata la excepcion que se produce cuando
+    /// el divisor es igual a cero
+    /// </summary>
+    /// <param name="dividendo">Dividendo</param>
+    /// <param name="divisor">Divisor</param>
         public static void aDividir(int dividendo, int divisor)
         {
             Division Division = new Division();

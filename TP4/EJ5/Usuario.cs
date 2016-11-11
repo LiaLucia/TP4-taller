@@ -27,19 +27,25 @@ namespace EJ5
         }
         
 
-
+        /// <summary>
+        /// Propiedad del atributo Codigo
+        /// </summary>
         public string Codigo
         {
             get { return this.iCodigo; }
             set { this.iCodigo = value; }
         }
-
+        /// <summary>
+        /// Propiedad del atributo NombreCompleto
+        /// </summary>
         public string NombreCompleto
         {
             get { return this.iNombreCompleto; }
             set { this.iNombreCompleto = value; }
         }
-
+        /// <summary>
+        /// Propedad del atributo CorreoElectronico
+        /// </summary>
         public string CorreoElectronico
         {
             get { return this.iCorreoElectronico; }

@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace EJ1
 {
     class CapaAplicacion
-    {
+    {/// <summary>
+    /// Metodo ejecutar que trata la excepcion que se produce en la capa de dominio
+    /// </summary>
         public void Ejecutar()
         {
             CapaDominio vCapaDominio = new CapaDominio();

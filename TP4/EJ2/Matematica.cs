@@ -9,7 +9,12 @@ namespace EJ2
    public class Matematica
     {
        
-
+        /// <summary>
+        /// Metodo que divide dos elementos
+        /// </summary>
+        /// <param name="pDividendo">Dividendo</param>
+        /// <param name="pDivisor">Divisor</param>
+        /// <returns>Devuelve el resultado de la division</returns>
         public double Dividir (int pDividendo, int pDivisor)
         {
             if (pDivisor != 0)

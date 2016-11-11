@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace EJ1
 {
     class CapaVista
-    {
+    {/// <summary>
+    /// Metodo ejecutar que trata la excepcion que se produce en la capa controlador
+    /// </summary>
         public void Ejecutar()
         {
             CapaControlador vCapaControlador = new CapaControlador();
