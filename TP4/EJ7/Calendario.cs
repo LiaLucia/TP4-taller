@@ -73,13 +73,20 @@ namespace EJ7
         public string ListarEvento()
         {
             string variable = "- ";
-
-            foreach (Evento elemento in this.Evento)
+            if (this.Evento.Count == 0)
             {
-                variable = variable + elemento.Titulo + " - ";
+                CalendarioVacioException Excepcion = new CalendarioVacioException("El calendario seleccionado se encuentra vacío");
+                throw Excepcion;
 
             }
+            else
+            {
+                foreach (Evento elemento in this.Evento)
+                {
+                    variable = variable + elemento.Titulo + " - ";
 
+                }
+            }
             return variable;
         }
 
@@ -92,6 +99,11 @@ namespace EJ7
                 {
                     eventos.AgregarEvento(elemento.Titulo, elemento.FechaInicio, elemento.FechaFin, elemento.Frecuencia);
                 }
+            }
+            if (eventos.Evento.Count==0)
+            {
+                CalendarioVacioException Excepcion = new CalendarioVacioException("No se han encontrado eventos");
+                throw Excepcion;
             }
             return eventos;
         }
@@ -108,6 +120,11 @@ namespace EJ7
                 {
                     eventos.AgregarEvento(elemento.Titulo, elemento.FechaInicio, elemento.FechaFin, elemento.Frecuencia);
                 }
+            }
+            if (eventos.Evento.Count == 0)
+            {
+                CalendarioVacioException Excepcion = new CalendarioVacioException("No se han encontrado eventos");
+                throw Excepcion;
             }
             return eventos;
         }

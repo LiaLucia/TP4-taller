@@ -25,7 +25,7 @@ namespace EJ7
             }
         }
 
-        public static void aAgregarEvento(string pTitulo, DateTime pFechaInicio, DateTime pFechaFin, TipoFrecuencia pFrecuencia, Calendario pCalendario)
+        public static void eAgregarEvento(string pTitulo, DateTime pFechaInicio, DateTime pFechaFin, TipoFrecuencia pFrecuencia, Calendario pCalendario)
         {
             
             try
@@ -47,41 +47,57 @@ namespace EJ7
            
         }
 
+        public static void elistarEventos(Calendario pCalendario)
+        {
+            try
+            {
+                pCalendario.ListarEvento();
+            }
+            catch (CalendarioVacioException excepcion)
+            {
+                Console.WriteLine("Se ha producido una exception {0}",excepcion.Message);
+            }
+        }
+
+        public static void eFiltrarPor(string pTitulo, Calendario pCalendario)
+        {
+            try
+            {
+                pCalendario.FiltrarPor(pTitulo);
+            }
+            catch (CalendarioVacioException excepcion)
+            {
+                Console.WriteLine("Se ha producido una exception {0}", excepcion.Message);
+            }
+        }
+
+        public static void eFiltrarPor(DateTime pFecha1, DateTime pFecha2, Calendario pCalendario)
+        {
+            try
+            {
+                pCalendario.FiltrarPor(pFecha1,pFecha2);
+            }
+            catch (CalendarioVacioException excepcion)
+            {
+                Console.WriteLine("Se ha producido una exception {0}", excepcion.Message);
+            }
+        }
+        public static void elistarCalendarios(Agenda pAgenda)
+        {
+            try
+            {
+                pAgenda.ListarCalendario();
+            }
+            catch (AgendaVaciaException excepcion)
+            {
+                Console.WriteLine("Se ha producido una exception {0}", excepcion.Message);
+            }
+        }
 
         static void Main(string[] args)
         {
-            Agenda agenda = new Agenda();
-            agenda.AgregarCalendario("MiCalendario1");
-            agenda.AgregarCalendario("MiCalendario2");
-            agenda.AgregarCalendario("MiCalendario3");
-            agenda.AgregarCalendario("MiCalendario4");
-            string a = agenda.ListarCalendario();
-            Console.WriteLine("ingrese la fecha de fin del evento");
-            DateTime result;
-            DateTime.TryParse(Console.ReadLine() , out result);
-            Console.WriteLine(result);
-            aAgregarEvento("miEvento", new DateTime(2016,12,11), result,TipoFrecuencia.UnaPorAño, agenda.Calendario[1]);            
-           
-            /* string b = agenda.Calendario[1].ListarEvento();
-             Console.WriteLine(b);
-             Console.WriteLine("Ingrese Fecha de inicio y fecha de fin: ");
-             DateTime fechaInicio;
-             DateTime.TryParse(Console.ReadLine(), out fechaInicio);
-             DateTime fechaFin;
-             DateTime.TryParse(Console.ReadLine(), out fechaFin);
-             eModificarEvento(fechaInicio, fechaFin, agenda.Calendario[1].Evento[0] );*/
-
-             string c = agenda.Calendario[1].ListarEvento();
-             Console.WriteLine(c);
-            // Console.WriteLine(a); */
-           // agenda.Calendario[1].ListarEvento();
-            Console.ReadLine();
-
-           
             
-
-
-
+           
         }
 
         

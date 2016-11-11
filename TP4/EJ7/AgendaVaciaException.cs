@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace EJ7
 {
-    public class FechaFinInvalidaException : ApplicationException
+
+    public class AgendaVaciaException : ApplicationException
     {
-        public FechaFinInvalidaException(string eMensaje) : base(eMensaje)
+        public AgendaVaciaException(string eMensaje) : base(eMensaje)
         {
 
         }
-    
     }
 }

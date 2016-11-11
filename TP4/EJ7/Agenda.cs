@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo("TestingEJ7")]
 namespace EJ7
 {
     class Agenda
     {
+        
         private List<Calendario> iListaCalendario;
         
-
         public Agenda()
         {
             iListaCalendario = new List<Calendario>();
@@ -46,7 +48,11 @@ namespace EJ7
                 variable = variable + elemento.Titulo +" - ";
 
             }
-             
+            if (variable == "- ")
+            {
+                AgendaVaciaException Excepcion = new AgendaVaciaException("La agenda no contiene ningun calendario");
+                throw Excepcion;
+            }
             return variable;
         }
 

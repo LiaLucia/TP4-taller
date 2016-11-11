@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Agenda.cs" />
+    <Compile Include="AgendaVaciaException.cs" />
     <Compile Include="Calendario.cs" />
+    <Compile Include="CalendarioVacioException.cs" />
     <Compile Include="Evento.cs" />
     <Compile Include="FechaFinInvalidaException.cs" />
     <Compile Include="FechaInicioInvalidaException.cs" />
